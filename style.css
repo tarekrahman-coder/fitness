@@ -521,6 +521,7 @@ th{
 @media (max-width: 640px){
     .run__container{
         grid-template-columns: 1fr;
+        justify-content: center;
     }
     .run__content-btn{
         display: block;
