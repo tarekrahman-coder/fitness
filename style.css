@@ -289,7 +289,6 @@ body{
 }
 
 .run__content-heading{
-   
     margin-top: 1rem;
 }
 
@@ -471,69 +470,6 @@ th{
 }/* section footer end here */
 
 /* responsive media query */
-@media (max-width: 576px) {
-    .container{
-        width: 95%;
-    }
-    .nav__items{
-        display: none;
-    }
-    .nav__bar{
-        display: block;
-    }
-    .header__wrapper{
-        grid-template-columns: 1fr;
-        margin-top: 5rem;
-    }
-    .header__content{
-        justify-content: flex-start;
-    }
-    .header__body-btn span{
-        display: none;
-    }
-    .box-1{
-        top: 10%;
-        right: 0;
-    }
-    
-    .run__content-heading, .run__content-text{
-        padding: 0;
-    }
-    
-.bmi__calculator-text{
-    width: 60%;
-   }
-
-.bmi__calculator-input{
-    grid-template-columns: repeat(2, minmax(100px, 150px));
-}
-
-.footer__container{
-        grid-template-columns: 1fr;
-        justify-content: center;
-}
-
-.item2{
-    flex-direction: column;
-}
-}
-
-@media (max-width: 640px){
-    .run__container{
-        grid-template-columns: 1fr;
-        justify-content: center;
-    }
-    .run__content-btn{
-        display: block;
-        text-align: center;
-        width: 80%;
-        
-    }
-    .run__image{
-        width: 280px;
-        height: 250px;
-    }
-}
 
 @media (min-width: 576px) and (max-width: 992px) {
 
@@ -591,3 +527,87 @@ th{
         justify-content: space-around;
     }
  }
+
+@media (max-width: 672px){
+    .run__container{
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    .run__content-btn{
+        display: block;
+        text-align: center;
+        width: 80%;
+        
+    }
+    .run__image{
+        width: 320px;
+        height: 250px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .container{
+        width: 95%;
+    }
+    .nav__items{
+        display: none;
+    }
+    .nav__bar{
+        display: block;
+    }
+    .header__wrapper{
+        grid-template-columns: 1fr;
+        margin-top: 5rem;
+    }
+    .header__content{
+        justify-content: flex-start;
+    }
+    .header__body-btn a{
+        padding: .8rem;
+        font-size: var(--fs-1);
+        font-weight: var(--fw-1)
+
+    }
+    .header__body-btn span{
+        display: none;
+    }
+    .box-1{
+        top: 35%;
+        right: 5%;
+    }
+    
+    .run__content-heading, .run__content-text{
+        padding: 0 20px !important;
+    }
+    .run__content-btn{
+        margin-inline: 20px !important;
+    }
+
+    .run__image{
+        width: 250px;
+        height: 220px;
+    }
+
+
+.bmi__calculator-text{
+    width: 60%;
+   }
+
+.bmi__calculator-input{
+    grid-template-columns: repeat(2, minmax(100px, 150px));
+}
+th, td{
+    padding: 12px 15px;
+}
+
+.footer__container{
+        grid-template-columns: 1fr;
+        justify-content: center;
+}
+
+.item2{
+    flex-direction: column;
+}
+}
+
